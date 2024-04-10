@@ -33,6 +33,8 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,7 +70,6 @@ h2 {
 }
 
 p {
-  margin: 0 0 30px 0;
   font-size: 18px;
 }
 
@@ -217,4 +218,17 @@ li:last-of-type {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.bg-glass {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+    --tw-gradient-from: hsla(0, 0%, 100%, 0) var(--tw-gradient-from-position);
+    --tw-gradient-to: hsla(0, 0%, 100%, 0) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+    --tw-gradient-to: hsla(0, 0%, 100%, .05) var(--tw-gradient-to-position);
+}
+
+.fadeout {
+  -webkit-mask-image: linear-gradient(#000, #000 calc(100% - 80px), transparent);
+  mask-image: linear-gradient(#000, #000 calc(100% - 80px), transparent);
 }
