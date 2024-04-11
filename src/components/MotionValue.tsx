@@ -1,13 +1,14 @@
-import { motion, useSpring } from "framer-motion";
+import { motion, useSpring, useTransform } from "framer-motion";
 
 const MotionValueComponent = () => {
   const scale  = useSpring(1);
+  const opacity = useTransform(scale, [0.5, 5], [0, 1]);
   
   return (
     <div className="flex flex-col items-center">
       <motion.div
         className="w-[100px] h-[100px] bg-red-500 rounded-[50px]"
-        style={{ scale }}
+        style={{ scale, opacity }}
       />
       <input
         type="range"
