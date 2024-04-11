@@ -3,6 +3,7 @@ import "./App.css";
 import MyFirstComponent from './components/MyFirstComponent'
 import HoverComponent from './components/HoverComponent'
 import ResponsiveComponent from './components/Responsive'
+import MotionValueComponent from './components/MotionValue'
 
 export default function App() {
   const [showNumber, setShowNumber] = useState(0);
@@ -16,6 +17,7 @@ export default function App() {
       {showNumber === 1 && <MyFirstComponent />}
       {showNumber === 2 && <HoverComponent />}
       {showNumber === 3 && <ResponsiveComponent />}
+      {showNumber === 4 && <MotionValueComponent />}
     </div>
   );
 }
