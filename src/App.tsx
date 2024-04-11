@@ -4,6 +4,7 @@ import MyFirstComponent from './components/MyFirstComponent'
 import HoverComponent from './components/HoverComponent'
 import ResponsiveComponent from './components/Responsive'
 import MotionValueComponent from './components/MotionValue'
+import DragComponent from './components/Drag'
 
 export default function App() {
   const [showNumber, setShowNumber] = useState(0);
@@ -18,6 +19,7 @@ export default function App() {
       {showNumber === 2 && <HoverComponent />}
       {showNumber === 3 && <ResponsiveComponent />}
       {showNumber === 4 && <MotionValueComponent />}
+      {showNumber === 5 && <DragComponent />}
     </div>
   );
 }
