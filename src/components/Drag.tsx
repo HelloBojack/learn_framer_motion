@@ -14,8 +14,8 @@ const DragComponent = () => {
       className='border border-gray-400 w-64 h-64 flex items-center justify-center'
       >
       <motion.div
-        className="border border-gray-400 w-24 h-24 rounded-[50%] flex items-center justify-center"
-        drag="x"
+        className="w-24 h-24 rounded-[50%] flex items-center justify-center"
+        drag
         style={{ x, scale, backgroundColor }}
         dragSnapToOrigin
         dragConstraints={constraintsRef}
