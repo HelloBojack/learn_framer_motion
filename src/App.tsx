@@ -5,6 +5,7 @@ import HoverComponent from './components/HoverComponent'
 import ResponsiveComponent from './components/Responsive'
 import MotionValueComponent from './components/MotionValue'
 import DragComponent from './components/Drag'
+import TextParallaxComponent from './components/TextParallax'
 
 const components = [
   null, // Index 0 is null because the showNumber starts from 1
@@ -12,7 +13,8 @@ const components = [
   HoverComponent,
   ResponsiveComponent,
   MotionValueComponent,
-  DragComponent
+  DragComponent,
+  TextParallaxComponent
 ];
 
 export default function App() {
@@ -23,7 +25,7 @@ export default function App() {
   const decrementShowNumber = () => setShowNumber(prev => Math.max(prev - 1, 0));
 
   return (
-    <div className="flex items-center justify-center w-full h-full ">
+    <div className="flex items-center justify-center w-full ">
       <div className="absolute top-10">
         <button onClick={decrementShowNumber} className="mr-10">&lt;</button>
         {showNumber}
